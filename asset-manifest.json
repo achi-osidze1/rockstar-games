@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/rockstar-games/static/css/main.55b9cf81.css",
+    "main.js": "/rockstar-games/static/js/main.d382663a.js",
+    "static/js/787.62307573.chunk.js": "/rockstar-games/static/js/787.62307573.chunk.js",
+    "index.html": "/rockstar-games/index.html",
+    "main.55b9cf81.css.map": "/rockstar-games/static/css/main.55b9cf81.css.map",
+    "main.d382663a.js.map": "/rockstar-games/static/js/main.d382663a.js.map",
+    "787.62307573.chunk.js.map": "/rockstar-games/static/js/787.62307573.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.55b9cf81.css",
+    "static/js/main.d382663a.js"
+  ]
+}
