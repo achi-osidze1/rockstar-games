@@ -1,0 +1,88 @@
+.container-{
+    background-color: black;
+    position: relative;
+}
+
+.container-text{
+    position: absolute;
+    font-size: xx-large;
+    color: white;
+    left: 66%;
+    top: 50px;
+}
+
+.background{
+    width: 65%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 480px) {
+    .container-{
+        height: 400px;
+        width: 100%;
+        background-color: black;
+    }
+    
+    .background{
+        height: 200px;
+        min-width: 100%;
+        object-fit: cover;
+    }
+
+    .container-text{
+        color: white;
+        font-size: small;
+        left: 4%;
+        text-align: center;
+        margin-top: 180px;
+        width: 90%;
+    }    
+}
+
+
+@media (min-width: 481px) and (max-width: 767px){
+    .container-{
+        height: 600px;
+        width: 100%;
+        background-color: black;
+    }
+    
+    .background{
+        height: 400px;
+        min-width: 100%;
+        object-fit: cover;
+    }
+
+    .container-text{
+        color: white;
+        font-size: large;
+        left: 4%;
+        text-align: center;
+        margin-top: 380px;
+        width: 90%;
+    }    
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .container-{
+        height: 750px;
+        width: 100%;
+        background-color: black;
+    }
+    
+    .background{
+        height: 550px;
+        min-width: 100%;
+        object-fit: cover;
+    }
+
+    .container-text{
+        color: white;
+        font-size: x-large;
+        left: 4%;
+        text-align: center;
+        margin-top: 530px;
+        width: 90%;
+    }  
+}

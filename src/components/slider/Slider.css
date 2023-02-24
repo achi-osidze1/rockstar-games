@@ -1,0 +1,102 @@
+.carousel{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+
+#img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#img:hover{
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+.slider-text{
+    color: white;
+    position: absolute;
+    top: 30px;
+    margin-left: 55%;
+}
+
+.slider-text h5:hover{
+    transition: 0.3s;
+    color: orange;
+}
+
+.slider-text h3:hover{
+    transition: 0.3s;
+    color: orange;
+}
+
+
+@media (max-width: 480px) {
+    .carousel{
+        height: 400px;
+        width: 100%;
+        background-color: black;
+    }
+    
+    #img{
+        height: 200px;
+        min-width: 100%;
+        object-fit: cover;
+    }
+
+    .slider-text{
+        color: white;
+        left: -49%;
+        text-align: center;
+        margin-top: 200px;
+        width: 90%;
+    }    
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .carousel{
+        height: 600px;
+        width: 100%;
+        background-color: black;
+    }
+    
+    #img{
+        height: 400px;
+        min-width: 100%;
+        object-fit: cover;
+    }
+
+    .slider-text{
+        color: white;
+        left: -49%;
+        text-align: center;
+        margin-top: 400px;
+        width: 90%;
+    }  
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .carousel{
+        height: 750px;
+        width: 100%;
+        background-color: black;
+    }
+    
+    #img{
+        height: 550px;
+        min-width: 100%;
+        object-fit: cover;
+    }
+
+    .slider-text{
+        color: white;
+        left: -49%;
+        text-align: center;
+        margin-top: 550px;
+        width: 90%;
+    }  
+}

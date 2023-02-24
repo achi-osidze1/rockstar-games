@@ -1,0 +1,62 @@
+.text{
+    color: white;
+    white-space: nowrap;
+    margin-left: 3%;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.game-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.game-image{
+    margin: 10px;
+    flex: 0 0 22.2222%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.game-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.game-img:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+@media (max-width: 480px) {
+    .text{
+        margin-left: 7%;
+    }
+
+    .game-image{
+        flex: 0 0 40.3333%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .text{
+        margin-left: 7%;
+    }
+
+    .game-image{
+        flex: 0 0 40.3333%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .text{
+        margin-left: 2%;
+    }
+
+    .game-image{
+        flex: 0 0 46.3333%;
+    }
+}
