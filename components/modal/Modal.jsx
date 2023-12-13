@@ -41,14 +41,16 @@ const Modal = (props) => {
                     src={videoSrc}
                     controls
                     width="100%"
+                    autoPlay
+                    muted
                     height="auto"
                     className="rounded-t"
                   ></video>
                 </div>
-                <div className="mt-3 mb-3 ml-3">
+                <div className="mt-3 mb-3 mr-3 flex justify-end">
                   <button
                     type="button"
-                    className="inline-flex justify-center bg-black border border-black rounded-md text-white hover:border-[#fcaf17] px-4 py-2 text-sm font-medium outline-none transition ease-in-out delay-10"
+                    className="inline-flex justify-center border border-gray-700 bg-black rounded-md text-white hover:border-[#fcaf17] px-4 py-2 text-sm font-medium outline-none transition ease-in-out delay-10"
                     onClick={closeModal}
                     ref={cancelButtonRef}
                   >

@@ -22,7 +22,7 @@ const NewswireList = (props) => {
                 <img
                   src={newswire?.imageSrc}
                   alt={newswire?.imageAlt}
-                  className="h-full w-full object-cover rounded-lg"
+                  className="h-full w-full object-cover rounded-t-lg"
                 />
               </div>
               <div className="p-5 mb-3">

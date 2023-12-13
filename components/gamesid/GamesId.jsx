@@ -11,7 +11,7 @@ const GamesId = (props) => {
           <div className="lg:flex">
             <div className="w-full">
               <img
-                src={game?.secondImage}
+                src={game?.images?.secondaryImage}
                 alt=""
                 className="w-full rounded-lg object-contain"
               />

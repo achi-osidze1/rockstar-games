@@ -34,8 +34,8 @@ const SignInPage = () => {
       >
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
-            className="mx-auto w-[80%]"
-            src="https://s.rsg.sc/auth/images/sc_logo_20180910.svg"
+            className="mx-auto w-[30%]"
+            src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/c46845952588bf44125a37117d4da32c.svg"
             alt=""
           />
         </div>

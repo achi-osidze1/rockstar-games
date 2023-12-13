@@ -55,8 +55,8 @@ export default function Home() {
         <meta name="description" content="HomePage" />
       </Head>
 
-      <div className="mt-12 pt-3">
-        <Slider newswireGames={newswireGames}/>
+      <div className="mt-12 pt-[31px]">
+        <Slider newswireGames={newswireGames} />
       </div>
 
       <div className="mx-auto mt-12 pt-12 p-4 sm:px-6 lg:max-w-[1920px]">
@@ -76,7 +76,7 @@ export default function Home() {
                 <Newswire newswireGames={newswireGames} />
                 <div className="text-center">
                   <Link href='/newswire'>
-                    <button className="px-2 py-1 text-white font-bold transition ease-in-out delay-10 outline-none rounded-tl-lg rounded-tr-lg border hover:rounded-lg border-[#0b0b0b] border-b border-b-[#fcaf17] hover:bg-[#fcaf17] hover:text-black cursor-pointer">
+                    <button className="px-2 py-1 text-white transition ease-in-out delay-10 outline-none rounded-tl-lg rounded-tr-lg border hover:rounded-lg border-[#0b0b0b] border-b border-b-[#fcaf17] hover:bg-[#fcaf17] hover:text-black cursor-pointer">
                       View More
                     </button>
                   </Link>
@@ -97,7 +97,7 @@ export default function Home() {
                 <FeaturedGames games={games} />
                 <div className="text-center">
                   <Link href='/games'>
-                    <button className="px-2 py-1 text-white font-bold transition ease-in-out delay-10 outline-none rounded-tl-lg rounded-tr-lg border hover:rounded-lg border-[#0b0b0b] border-b border-b-[#fcaf17] hover:bg-[#fcaf17] hover:text-black cursor-pointer">
+                    <button className="px-2 py-1 text-white transition ease-in-out delay-10 outline-none rounded-tl-lg rounded-tr-lg border hover:rounded-lg border-[#0b0b0b] border-b border-b-[#fcaf17] hover:bg-[#fcaf17] hover:text-black cursor-pointer">
                       View More
                     </button>
                   </Link>

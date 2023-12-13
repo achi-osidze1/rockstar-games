@@ -44,7 +44,7 @@ const Videos = () => {
         <meta name="description" content="Videos" />
       </Head>
 
-      <div className="w-full h-full mt-12 pt-3">
+      <div className="w-full h-full mt-12 py-7">
         {loading ? <Spinner /> : <VideosId videos={videos} />}
       </div>
     </>

@@ -31,21 +31,21 @@ const Slider = (props) => {
         <LoadingSlider />
       ) : (
         <Carousel className="mx-auto bg-black">
-          {newswireGames.slice(6, 9).map((newswire) => (
+          {newswireGames.slice(8, 11).map((newswire) => (
             <div key={newswire?.id}>
               <div className="lg:flex">
-                <div className="w-full">
+                <div>
                   <img
-                    src={newswire?.imageSrc}
+                    src={newswire?.secondImageSrc}
                     alt=""
-                    className="w-full object-cover"
+                    className="w-full"
                   />
                 </div>
-                <div className="p-5 w-full">
-                  <h3 className="font text-2xl text-center lg:text-left text-white">
+                <div className="p-5">
+                  <h3 className="text-2xl text-center lg:text-left text-white">
                     {newswire?.name}
                   </h3>
-                  <h3 className="text-white text-center lg:text-left text-lg sm:text-lg md:text-3xl lg:text-4xl mt-3">
+                  <h3 className="font text-white text-center lg:text-left text-lg sm:text-lg md:text-3xl lg:text-4xl mt-3">
                     {newswire?.description}
                   </h3>
                   <div className="text-center lg:text-left">

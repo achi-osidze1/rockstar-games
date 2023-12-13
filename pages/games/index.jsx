@@ -48,34 +48,64 @@ const GamesPage = () => {
       </Head>
 
       <div className="mx-auto mt-12 pt-12 p-4 sm:px-6 lg:max-w-[1920px]">
-        <div className="mx-3 lg:mx-12">
+        <div className="mx-3 lg:mx-12 my-8">
           {search ? (
             <>
               {loading ? (
-                <div className="text-center">
-                  <h1 className="font mb-3 text-gray-700 text-2xl animate-pulse">
+                <div className="lg:mt-9 lg:pt-9">
+                  <h1 className="mb-3 text-gray-700 text-2xl animate-pulse">
                     Fetching Search Results...
                   </h1>
-                  <h1 className="text-white uppercase text-4xl">{search}</h1>
+                  <h1 className="font text-white uppercase text-4xl">
+                    {search}
+                  </h1>
                 </div>
               ) : (
                 <>
-                  <div className="text-center mb-5">
-                    <h1 className="font text-gray-700 text-2xl mb-3">
-                      Search Results For:
-                    </h1>
-                    <h1 className="text-white uppercase text-4xl mb-3">{search}</h1>
-                    <h1 className="font text-[#fcaf17]">
-                      Games <span>( {filteredGames.length} )</span>
-                    </h1>
-                  </div>
-                  <div>
-                    {loading ? (
-                      <LoadingGamesList games={filteredGames} />
-                    ) : (
-                      <GamesList games={filteredGames} />
-                    )}
-                  </div>
+                  {filteredGames.length > 0 ? (
+                    <>
+                      <div className="lg:mt-9 lg:pt-9">
+                        <h1 className="text-gray-500 text-2xl mb-3">
+                          Showing <span className="text-white"> Games</span>{" "}
+                          filtered by{" "}
+                          <span className="font text-white uppercase">
+                            {" "}
+                            {search}
+                          </span>
+                        </h1>
+                        <h1 className="font text-[#fcaf17]">
+                          Games <span>( {filteredGames.length} )</span>
+                        </h1>
+                      </div>
+                      <div>
+                        {loading ? (
+                          <LoadingGamesList games={filteredGames} />
+                        ) : (
+                          <GamesList games={filteredGames} />
+                        )}
+                      </div>
+                    </>
+                  ) : (
+                    <div className="mt-12 pt-12 text-center flex flex-col items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="w-[80px] h-[80px] text-white"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"
+                        />
+                      </svg>
+                      <h1 className="font text-white text-2xl">
+                        Sorry, there were no results.
+                      </h1>
+                    </div>
+                  )}
                 </>
               )}
             </>

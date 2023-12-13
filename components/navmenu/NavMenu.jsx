@@ -63,19 +63,6 @@ const NavMenu = (props) => {
                         <Search />
                         <ul>
                           <li className="py-3 w-0">
-                            <Link href="/newswire">
-                              <h1
-                                className={`cursor-pointer transition ease-in-out delay-10 hover:text-[#fcaf17] text-2xl w-0 ${
-                                  router.pathname === "/newswire"
-                                    ? "text-[#fcaf17]"
-                                    : "text-white"
-                                }`}
-                              >
-                                Newswire
-                              </h1>
-                            </Link>
-                          </li>
-                          <li className="py-3 w-0">
                             <Link href="/games">
                               <h1
                                 className={`cursor-pointer transition ease-in-out delay-10 hover:text-[#fcaf17] text-2xl w-0 ${
@@ -85,6 +72,19 @@ const NavMenu = (props) => {
                                 }`}
                               >
                                 Games
+                              </h1>
+                            </Link>
+                          </li>
+                          <li className="py-3 w-0">
+                            <Link href="/newswire">
+                              <h1
+                                className={`cursor-pointer transition ease-in-out delay-10 hover:text-[#fcaf17] text-2xl w-0 ${
+                                  router.pathname === "/newswire"
+                                    ? "text-[#fcaf17]"
+                                    : "text-white"
+                                }`}
+                              >
+                                Newswire
                               </h1>
                             </Link>
                           </li>
@@ -105,63 +105,6 @@ const NavMenu = (props) => {
                             Downloads
                           </li>
                           <li className="cursor-pointer transition ease-in-out delay-10 hover:text-[#fcaf17] text-white flex text-center items-center text-2xl py-3 w-0">
-                            Support
-                            <span>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                strokeWidth={1.5}
-                                stroke="currentColor"
-                                className="w-4 h-4 ml-2"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-                                />
-                              </svg>
-                            </span>
-                          </li>
-                          <li className="cursor-pointer transition ease-in-out delay-10 whitespace-nowrap hover:text-[#fcaf17] text-white flex text-center items-center text-2xl py-3 w-0">
-                            Social Club
-                            <span>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                strokeWidth={1.5}
-                                stroke="currentColor"
-                                className="w-4 h-4 ml-2"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-                                />
-                              </svg>
-                            </span>
-                          </li>
-                          <li className="cursor-pointer transition ease-in-out delay-10 hover:text-[#fcaf17] text-white flex text-center items-center text-2xl py-3 w-0">
-                            Launcher
-                            <span>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                strokeWidth={1.5}
-                                stroke="currentColor"
-                                className="w-4 h-4 ml-2"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-                                />
-                              </svg>
-                            </span>
-                          </li>
-                          <li className="cursor-pointer transition ease-in-out delay-10 hover:text-[#fcaf17] text-white flex text-center items-center text-2xl py-3 w-0">
                             Store
                             <span>
                               <svg
@@ -180,6 +123,28 @@ const NavMenu = (props) => {
                               </svg>
                             </span>
                           </li>
+                          <li className="cursor-pointer transition ease-in-out delay-10 hover:text-[#fcaf17] text-white flex text-center items-center text-2xl py-3 w-0">
+                            Support
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                strokeWidth={1.5}
+                                stroke="currentColor"
+                                className="w-4 h-4 ml-2"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                                />
+                              </svg>
+                            </span>
+                          </li>
+                          <button className="w-full my-3 py-4 text-sm bg-[#fcaf17] rounded-lg font-bold hover:bg-[#ffaa00] transition ease-in-out delay-10">
+                            GET LAUNCHER
+                          </button>
                         </ul>
                       </nav>
                     </div>

@@ -13,22 +13,22 @@ const GameScreens = (props) => {
               <div className="w-full md:w-1/2 lg:w-1/2 pb-3 p-1 md:p-2">
                 <img
                   alt=""
-                  className="block h-full w-full rounded object-cover object-center cursor-pointer hover:opacity-75 transition ease-in-out delay-10"
-                  src={game?.screens}
+                  className="block h-full w-full rounded object-cover object-center hover:opacity-75 transition ease-in-out delay-10"
+                  src={game?.screenshots[0]}
                 />
               </div>
               <div className="w-full md:w-1/2 lg:w-1/2 pb-3 p-1 md:p-2">
                 <img
                   alt=""
-                  className="block h-full w-full rounded object-cover object-center cursor-pointer hover:opacity-75 transition ease-in-out delay-10"
-                  src={game?.screens2}
+                  className="block h-full w-full rounded object-cover object-center hover:opacity-75 transition ease-in-out delay-10"
+                  src={game?.screenshots[1]}
                 />
               </div>
               <div className="w-full pb-3 p-1 md:p-2">
                 <img
                   alt=""
-                  className="block h-full w-full rounded object-cover object-center cursor-pointer hover:opacity-75 transition ease-in-out delay-10"
-                  src={game?.screens3}
+                  className="block h-full w-full rounded object-cover object-center hover:opacity-75 transition ease-in-out delay-10"
+                  src={game?.screenshots[2]}
                 />
               </div>
             </div>
@@ -36,22 +36,22 @@ const GameScreens = (props) => {
               <div className="w-full pb-3 p-1 md:p-2">
                 <img
                   alt=""
-                  className="block h-full w-full rounded object-cover object-center cursor-pointer hover:opacity-75 transition ease-in-out delay-10"
-                  src={game?.screens4}
+                  className="block h-full w-full rounded object-cover object-center hover:opacity-75 transition ease-in-out delay-10"
+                  src={game?.screenshots[3]}
                 />
               </div>
               <div className="w-full md:w-1/2 lg:w-1/2 pb-3 p-1 md:p-2">
                 <img
                   alt=""
-                  className="block h-full w-full rounded object-cover object-center cursor-pointer hover:opacity-75 transition ease-in-out delay-10"
-                  src={game?.screens5}
+                  className="block h-full w-full rounded object-cover object-center hover:opacity-75 transition ease-in-out delay-10"
+                  src={game?.screenshots[4]}
                 />
               </div>
               <div className="w-full md:w-1/2 lg:w-1/2 p-1 md:p-2">
                 <img
                   alt=""
-                  className="block h-full w-full rounded object-cover object-center cursor-pointer hover:opacity-75 transition ease-in-out delay-10"
-                  src={game?.screens6}
+                  className="block h-full w-full rounded object-cover object-center hover:opacity-75 transition ease-in-out delay-10"
+                  src={game?.screenshots[5]}
                 />
               </div>
             </div>

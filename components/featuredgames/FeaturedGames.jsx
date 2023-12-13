@@ -11,7 +11,7 @@ const FeaturedGames = (props) => {
           <div className="group relative h-full rounded-lg cursor-pointer">
             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden lg:aspect-none group-hover:opacity-75 transition ease-in-out delay-10">
               <img
-                src={game?.image}
+                src={game?.images?.mainImage}
                 alt=""
                 className="h-full w-full object-cover rounded-lg"
               />

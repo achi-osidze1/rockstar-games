@@ -45,7 +45,7 @@ const NewswireDetails = () => {
       </Head>
 
       <div className="mx-auto mt-12 p-4 sm:px-6 lg:max-w-[1920px]">
-        <div className="mx-3 lg:mx-12">
+        <div className="mx-3 lg:mx-12 my-[15px]">
           {loading ? <Spinner /> : <NewswireId newswireGames={newswireGames} />}
         </div>
       </div>
@@ -54,4 +54,3 @@ const NewswireDetails = () => {
 };
 
 export default NewswireDetails;
-
