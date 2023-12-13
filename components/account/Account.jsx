@@ -1,12 +1,6 @@
-import { Menu, Transition, Dialog } from "@headlessui/react";
-import { Fragment, useEffect, useState } from "react";
-import { XMarkIcon } from "@heroicons/react/24/outline";
+import { Menu, Transition } from "@headlessui/react";
+import { Fragment, useState } from "react";
 import Link from "next/link";
-import {
-  Accordion,
-  AccordionHeader,
-  AccordionBody,
-} from "@material-tailwind/react";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");

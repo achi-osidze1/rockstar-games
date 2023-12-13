@@ -65,7 +65,7 @@ const Header = () => {
                 <ul className="flex space-x-8">
                   <Link href="/games">
                     <h1
-                      className={`cursor-pointer transition ease-in-out delay-10 hover:text-[#fcaf17] ${
+                      className={`cursor-pointer hover:text-white transition ease-in-out delay-10 ${
                         router.pathname === "/games"
                           ? "font-bold text-[#e8e8e8] hover:text-[#e8e8e8]"
                           : "text-[#e8e8e8]"
@@ -76,7 +76,7 @@ const Header = () => {
                   </Link>
                   <Link href="/newswire">
                     <h1
-                      className={`cursor-pointer transition ease-in-out delay-10 hover:text-[#fcaf17] ${
+                      className={`cursor-pointer hover:text-white transition ease-in-out delay-10 ${
                         router.pathname === "/newswire"
                           ? "font-bold text-[#e8e8e8] hover:text-[#e8e8e8]"
                           : "text-[#e8e8e8]"
@@ -87,7 +87,7 @@ const Header = () => {
                   </Link>
                   <Link href="/videos">
                     <h1
-                      className={`cursor-pointer transition ease-in-out delay-10 hover:text-[#fcaf17] ${
+                      className={`cursor-pointer hover:text-white transition ease-in-out delay-10 ${
                         router.pathname === "/videos"
                           ? "font-bold text-[#e8e8e8] hover:text-[#e8e8e8]"
                           : "text-[#e8e8e8]"

@@ -30,7 +30,7 @@ const HeaderSearch = () => {
   };
   return (
     <div className="bg-[#282828] lg:max-w-full hidden lg:block border-b border-b-[#636363]">
-      <div className="mx-auto px-4 sm:px-6">
+      <div className="mx-auto px-4 sm:px-3">
         <div className="mx-3 lg:mx-12">
           <div className="relative">
             <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">

@@ -58,16 +58,18 @@ const NavMenu = (props) => {
                     </div>
                   </Transition.Child>
                   <div className="flex h-full flex-col overflow-y-scroll bg-black py-6 shadow-xl">
-                    <div className="relative mt-6 flex-1 px-4 sm:px-6">
-                      <nav>
+                    <nav>
+                      <div className="mt-6">
                         <Search />
+                      </div>
+                      <div className="relative mt-6 flex-1 px-4 sm:px-4">
                         <ul>
-                          <li className="py-3 w-0">
+                          <li className="pb-2">
                             <Link href="/games">
                               <h1
-                                className={`cursor-pointer transition ease-in-out delay-10 hover:text-[#fcaf17] text-2xl w-0 ${
+                                className={`cursor-pointer transition ease-in-out delay-10 hover:bg-[#161616] text-2xl p-2 rounded ${
                                   router.pathname === "/games"
-                                    ? "text-[#fcaf17]"
+                                    ? "text-white font-bold bg-[#161616]"
                                     : "text-white"
                                 }`}
                               >
@@ -75,12 +77,12 @@ const NavMenu = (props) => {
                               </h1>
                             </Link>
                           </li>
-                          <li className="py-3 w-0">
+                          <li className="pb-2">
                             <Link href="/newswire">
                               <h1
-                                className={`cursor-pointer transition ease-in-out delay-10 hover:text-[#fcaf17] text-2xl w-0 ${
+                                className={`cursor-pointer transition ease-in-out delay-10 hover:bg-[#161616] text-2xl p-2 rounded ${
                                   router.pathname === "/newswire"
-                                    ? "text-[#fcaf17]"
+                                    ? "text-white font-bold bg-[#161616]"
                                     : "text-white"
                                 }`}
                               >
@@ -88,12 +90,12 @@ const NavMenu = (props) => {
                               </h1>
                             </Link>
                           </li>
-                          <li className="py-3 w-0">
+                          <li className="pb-2">
                             <Link href="/videos">
                               <h1
-                                className={`cursor-pointer transition ease-in-out delay-10 hover:text-[#fcaf17] text-2xl w-0 ${
+                                className={`cursor-pointer transition ease-in-out delay-10 hover:bg-[#161616] text-2xl p-2 rounded ${
                                   router.pathname === "/videos"
-                                    ? "text-[#fcaf17]"
+                                    ? "text-white font-bold bg-[#161616]"
                                     : "text-white"
                                 }`}
                               >
@@ -101,10 +103,10 @@ const NavMenu = (props) => {
                               </h1>
                             </Link>
                           </li>
-                          <li className="cursor-pointer transition ease-in-out delay-10 hover:text-[#fcaf17] text-white text-2xl py-3 w-0">
+                          <li className="cursor-pointer transition ease-in-out delay-10 text-white hover:bg-[#161616] text-2xl p-2 rounded mb-2">
                             Downloads
                           </li>
-                          <li className="cursor-pointer transition ease-in-out delay-10 hover:text-[#fcaf17] text-white flex text-center items-center text-2xl py-3 w-0">
+                          <li className="cursor-pointer transition ease-in-out delay-10 text-white flex text-center items-center hover:bg-[#161616] text-2xl p-2 rounded mb-2">
                             Store
                             <span>
                               <svg
@@ -123,7 +125,7 @@ const NavMenu = (props) => {
                               </svg>
                             </span>
                           </li>
-                          <li className="cursor-pointer transition ease-in-out delay-10 hover:text-[#fcaf17] text-white flex text-center items-center text-2xl py-3 w-0">
+                          <li className="cursor-pointer transition ease-in-out delay-10 hover:bg-[#161616] text-white flex text-center items-center text-2xl py-3 rounded p-2 mb-3">
                             Support
                             <span>
                               <svg
@@ -146,8 +148,8 @@ const NavMenu = (props) => {
                             GET LAUNCHER
                           </button>
                         </ul>
-                      </nav>
-                    </div>
+                      </div>
+                    </nav>
                   </div>
                 </Dialog.Panel>
               </Transition.Child>
