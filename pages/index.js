@@ -64,7 +64,7 @@ export default function Home() {
           <div className="my-5">
             <div className="w-0">
               <Link href='/newswire'>
-                <h2 className="text-2xl font-bold tracking-tight text-white cursor-pointer w-0 hover:text-[#fcaf17] transition ease-in-out delay-10">
+                <h2 className="text-2xl font-bold tracking-tight text-white cursor-pointer w-0 hover:text-[#e8e8e8] transition ease-in-out delay-10">
                   Newswire
                 </h2>
               </Link>
@@ -85,7 +85,7 @@ export default function Home() {
             )}
             <div className="w-0">
               <Link href='/games'>
-                <h2 className="text-2xl mt-12 pt-12 font-bold tracking-tight text-white cursor-pointer w-0 hover:text-[#fcaf17] transition ease-in-out delay-10 whitespace-nowrap">
+                <h2 className="text-2xl mt-12 pt-12 font-bold tracking-tight text-white cursor-pointer w-0 hover:text-[#e8e8e8] transition ease-in-out delay-10 whitespace-nowrap">
                   Featured Games
                 </h2>
               </Link>
